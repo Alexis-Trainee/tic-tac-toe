@@ -1,0 +1,17 @@
+#game {
+    width: 510px;
+    height: 510px;
+    border: solid 3px black;
+}
+
+.line {
+    height:170px;
+    border-bottom: solid 1px red;
+}
+
+.square {
+    width: 169px;
+    height: 100%;
+    border-right: solid 1px blue;
+    float: left;
+}

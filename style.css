@@ -1,17 +1,46 @@
+body {
+    background-color:darkcyan;
+}
+
+#display {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    float: left;
+    margin-right: 10px;
+}
+
+#start {
+    margin: auto;
+    border-radius: 50%;
+    height: 50px;
+    border: 0;
+}
+
 #game {
-    width: 510px;
-    height: 510px;
+    width: 450px;
+    height: 450px;
     border: solid 3px black;
+    margin: auto;
 }
 
 .line {
-    height:170px;
-    border-bottom: solid 1px red;
+    height:150px;
+    border-bottom: solid 1px black;
 }
 
 .square {
-    width: 169px;
+    width: 149px;
     height: 100%;
-    border-right: solid 1px blue;
+    border-right: solid 1px black;
     float: left;
+    background-size: cover;
+}
+
+#result {
+    text-align: center;
+    color: gold;
 }

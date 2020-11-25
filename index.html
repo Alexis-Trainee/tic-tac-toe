@@ -7,29 +7,34 @@
     <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
   </head>
   <body>
+    <div id="title">
+      <h1>TIC TAC TOE</h1>
+    </div>
+
     <div id="display">
       <p>Vez do Jogador:</p>
       <img id="start" src="1.jpg">
+      <p id="reset"><button onclick="resetGame()"> RESET</button></p>
     </div>
 
     <div id="game">
 
       <div class="line">
-        <div class="square" id="square1" onclick="verifysquare('square1')"></div>
-        <div class="square" id="square2" onclick="verifysquare('square2')"></div>
-        <div class="square" id="square3" onclick="verifysquare('square3')"></div>
+        <div class="square" id="square1" onclick="verifySquare('square1')"></div>
+        <div class="square" id="square2" onclick="verifySquare('square2')"></div>
+        <div class="square" id="square3" onclick="verifySquare('square3')"></div>
       </div>
 
       <div class="line">
-        <div class="square" id="square4" onclick="verifysquare('square4')"></div>
-        <div class="square" id="square5" onclick="verifysquare('square5')"></div>
-        <div class="square" id="square6" onclick="verifysquare('square6')"></div>
+        <div class="square" id="square4" onclick="verifySquare('square4')"></div>
+        <div class="square" id="square5" onclick="verifySquare('square5')"></div>
+        <div class="square" id="square6" onclick="verifySquare('square6')"></div>
       </div>
 
       <div class="line">
-        <div class="square" id="square7" onclick="verifysquare('square7')"></div>
-        <div class="square" id="square8" onclick="verifysquare('square8')"></div>
-        <div class="square" id="square9" onclick="verifysquare('square9')"></div>
+        <div class="square" id="square7" onclick="verifySquare('square7')"></div>
+        <div class="square" id="square8" onclick="verifySquare('square8')"></div>
+        <div class="square" id="square9" onclick="verifySquare('square9')"></div>
       </div>
 
     </div>

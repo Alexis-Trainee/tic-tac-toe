@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <title>TIC TAC TOE</title>
     <meta charset="utf-8">
@@ -8,13 +8,14 @@
   </head>
   <body>
     <div id="title">
-      <h1>TIC TAC TOE</h1>
+      <img src="ttt.gif" id="ImageTitle">
     </div>
 
     <div id="display">
       <p>Vez do Jogador:</p>
       <img id="start" src="1.jpg">
-      <p id="reset"><button onclick="resetGame()"> RESET</button></p>
+      <button onclick="resetGame()"> RESET</button>
+      <div id="result"></div>
     </div>
 
     <div id="game">
@@ -39,7 +40,6 @@
 
     </div>
 
-    <div id="result"></div>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

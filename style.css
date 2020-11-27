@@ -1,9 +1,20 @@
 body {
     background-color:darkcyan;
+
 }
 
 #title {
-    text-align: center;
+    width: 300px;
+    margin: auto;
+    align-items: center
+}
+
+#ImageTitle {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    /* margin-bottom: 20px; */
+    display: block;
 }
 
 #display {
@@ -11,29 +22,32 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     border: solid 2px black;
-    padding: 40px;
+    padding: 20px;
     width: 20%;
     float: left;
+    border-radius: 10px;
+    background-color: ghostwhite;
 }
 
 p {
     float: left;
     margin-right: 10px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #start {
     margin: auto;
     border-radius: 50%;
-    height: 50px;
+    height: 60px;
     border: 0;
 }
 
-#reset {
-background-color: red;
-}
-
 button{
-color: red;
+    width: 210px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #FF0000;
 }
 
 #game {
@@ -61,43 +75,77 @@ color: red;
     color: gold;
 }
 
+/*------------------------------------------------------*/
 @media screen and (max-width: 800px) {
-    #title {
-        text-align: center;
+
+    #display {
+        width: 210px;
+        height: 110px;
+        padding: 0;
+        margin-left: 17px;
+
     }
 
- #display {
-        border: solid 2px black;
-        width: 50%;
-        margin: auto;
-        float: inherit;
-    }
 
-    p {
-        float: left;
-        margin-right: 10px;
-    }
 
-    #start {
-        margin: auto;
-        border-radius: 50%;
-        height: 50px;
-        border: 0;
+    button {
+        width: 206px;
+        font-size: 30px;
+        font-weight: bold;
     }
-
-    #reset{
-    font-size: 20px;
-    }
-
-button {
-color: blue;
-} 
 
     #game {
         width: 450px;
         height: 450px;
         border: solid 3px black;
         margin: auto;
-        margin-top: 50px;
+        margin-left: 35%;
+
     }
+
 }
+/*-------------------------------------------------*/
+@media screen and (max-width: 480px) {
+
+    #display {
+        width: 310px;
+        height: 75px;
+        padding: 0;
+        margin-left: 17px;
+    }
+
+    button {
+        width: 90px;
+        font-size: 20px;
+    }
+
+    #result{
+        text-align: center;
+        color: gold;
+        margin-top: 340px;
+    }
+
+    #game {
+        width: 315px;
+        height: 315px;
+        border: solid 3px black;
+        margin: auto;
+        margin-top: 100px;
+        margin-left: 5%;
+    }
+
+    .line {
+        height:105px;
+        border-bottom: solid 1px black;
+    }
+
+    .square {
+        width: 104px;
+        height: 100%;
+        border-right: solid 1px black;
+        float: left;
+        background-size: cover;
+    }
+
+}
+

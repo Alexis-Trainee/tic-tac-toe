@@ -44,7 +44,7 @@ function verifyChampion() {
     }
 
     if(champion) {
-        document.getElementById("result").innerHTML = "<h1> O jogador " +winner + " venceu!</h1>"
+        document.getElementById("result").innerHTML = "<h1> O jogador " +winner + " venceu!</h1><audio src='aplausos.mp3' autoplay>"
         let squares = document.getElementsByClassName("square");
         for (let i=0; i<squares.length; i++){
             squares[i].onclick = null;
